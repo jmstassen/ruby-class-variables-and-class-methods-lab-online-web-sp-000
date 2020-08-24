@@ -29,9 +29,9 @@ class Song
   def Song.genre_count
     @@genres.each do |genre|
       if @@genres.include?(genre)
-        @@genres[genre].value += 1
+        @@genres.[genre] += 1
       else
-        @@genres[genre] = 1
+        @@genres.[genre] = 1
       end
     end
 
