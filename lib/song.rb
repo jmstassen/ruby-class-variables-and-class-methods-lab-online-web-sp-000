@@ -10,25 +10,25 @@ class Song
     @@artists << artist
   end
 
-  def song.count
+  def Song.count
     @@count
   end
 
-  def song.genre
+  def Song.genre
     @@genres
   end
 
-  def song.artists
+  def Song.artists
     @@artists
   end
 
-  def song.genre_count
+  def Song.genre_count
     #iterate over the @@genres array and populate a hash with the key/value pairs
     #check to see if the hash already contains a key of a particular genre
     #if so, increment the value of that key by one, otherwise create a new key/value pair
   end
 
-  def song.artist_count
+  def Song.artist_count
     #iterate over the @@artists array and populate a hash with the key/value pairs
     #check to see if the hash already contains a key of a particular genre
     #if so, increment the value of that key by one, otherwise create a new key/value pair
