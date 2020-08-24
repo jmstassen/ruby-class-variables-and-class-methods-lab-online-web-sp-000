@@ -19,7 +19,7 @@ class Song
   end
 
   def Song.genre
-    @@genres.uniq
+    @@genre.uniq
   end
 
   def Song.artists
