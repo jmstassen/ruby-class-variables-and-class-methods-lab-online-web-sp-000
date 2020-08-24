@@ -34,7 +34,7 @@ class Song
       else
         genre_hast.genre = 1
       end
-    end  
+    end
   end
 
     #iterate over the @@genres array and populate a hash with the key/value pairs
