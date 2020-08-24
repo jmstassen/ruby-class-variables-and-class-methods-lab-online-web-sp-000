@@ -39,8 +39,14 @@ class Song
   end
 
   def Song.artist_count
-    #iterate over the @@artists array and populate a hash with the key/value pairs
-    #check to see if the hash already contains a key of a particular genre
-    #if so, increment the value of that key by one, otherwise create a new key/value pair
+    artists_hash = {}
+    @@artists.each do |artist|
+      if artists_hash.has_key?(artist)
+        artists_hash[artist] += 1
+      else
+        artists_hash[artist] = 1
+      end
+    end
+    artists_hash
   end
 end
