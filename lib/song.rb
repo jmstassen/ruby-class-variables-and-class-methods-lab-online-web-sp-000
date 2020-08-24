@@ -33,6 +33,7 @@ class Song
       else
         @@genres[genre] = 1
       end
+    end
 
     #iterate over the @@genres array and populate a hash with the key/value pairs
     #check to see if the hash already contains a key of a particular genre
