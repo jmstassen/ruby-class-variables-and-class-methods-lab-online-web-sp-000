@@ -33,5 +33,3 @@ song Class
     #check to see if the hash already contains a key of a particular genre
     #if so, increment the value of that key by one, otherwise create a new key/value pair
   end
-end
-end
