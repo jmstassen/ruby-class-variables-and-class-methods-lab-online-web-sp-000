@@ -27,6 +27,13 @@ class Song
   end
 
   def Song.genre_count
+    @@genres.each do |genre|
+      if @@genres.includes?(genre)
+        @@genres[genre] += 1
+      else
+        @@genres[genre] = 1
+      end
+
     #iterate over the @@genres array and populate a hash with the key/value pairs
     #check to see if the hash already contains a key of a particular genre
     #if so, increment the value of that key by one, otherwise create a new key/value pair
