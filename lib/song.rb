@@ -27,13 +27,15 @@ class Song
   end
 
   def Song.genre_count
+    genres_hash = {}
     @@genres.each do |genre|
-      if @@genres.include?(genre)
-        @@genres.genre += 1
+      if genres_hash.has_key?(genre)
+        genre_hash.[genre] += 1
       else
-        @@genres.genre = 1
+        genre_hast.[genre] = 1
       end
-    end
+    end  
+  end
 
     #iterate over the @@genres array and populate a hash with the key/value pairs
     #check to see if the hash already contains a key of a particular genre
